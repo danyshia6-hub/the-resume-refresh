@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
         .intro { text-align: center; max-width: 750px; margin: 0 auto 60px auto; font-size: 1.1rem; color: var(--charcoal); }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
-        .card { background: #fff; padding: 30px; border: 1px solid #eef; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); text-align: center; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .card { background: #fff; padding: 30px; border: 1px solid #eef; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); text-align: center; display: flex; flex-direction: column; justify-content: space-between; transition: 0.3s; }
         .card:hover { transform: translateY(-5px); border-color: var(--gold); }
         .card h3 { font-size: 1.4rem; color: var(--black); margin-bottom: 10px; font-weight: normal; }
         .price { font-size: 1.8rem; color: var(--gold); margin-bottom: 15px; font-weight: bold; }
@@ -30,7 +31,7 @@
         .form-section p { font-family: sans-serif; color: #666; text-align: center; margin-bottom: 30px; font-size: 0.95rem; }
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; margin-bottom: 8px; font-family: sans-serif; font-size: 0.9rem; font-weight: bold; color: var(--charcoal); }
-        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: sans-serif; font-size: 1px; background-color: var(--cream); }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: sans-serif; font-size: 16px; background-color: var(--cream); }
         .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); outline: none; background-color: #fff; }
         .btn { display: block; width: 100%; max-width: 300px; margin: 20px auto 0 auto; background-color: var(--black); color: var(--cream); padding: 14px 30px; text-decoration: none; font-weight: bold; font-family: sans-serif; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; border: 1px solid var(--black); border-radius: 2px; transition: 0.3s; cursor: pointer; text-align: center; }
         .btn:hover { background-color: var(--gold); color: var(--black); border-color: var(--gold); }
@@ -72,25 +73,19 @@
                 </div>
             </div>
             <div class="card">
-                <div>
-                    <h3>Cover Letter Customization</h3>
-                    <div class="price">$20</div>
-                    <p>A persuasive, tailored cover letter outline matching your new layout that links your specific achievements directly to your target role.</p>
-                </div>
+                <h3>Cover Letter Customization</h3>
+                <div class="price">$20</div>
+                <p>A persuasive, tailored cover letter outline matching your new layout that links your specific achievements directly to your target role.</p>
             </div>
             <div class="card">
-                <div>
-                    <h3>The Launchpad Suite</h3>
-                    <div class="price">$60</div>
-                    <p>Get entirely application-ready. Includes our premium comprehensive resume makeover paired seamlessly with a tailored cover letter layout.</p>
-                </div>
+                <h3>The Launchpad Suite</h3>
+                <div class="price">$60</div>
+                <p>Get entirely application-ready. Includes our premium comprehensive resume makeover paired seamlessly with a tailored cover letter layout.</p>
             </div>
             <div class="card">
-                <div>
-                    <h3>The Career Starter Bundle</h3>
-                    <div class="price">$85</div>
-                    <p>Our ultimate suite: The total resume makeover, cover letter design, plus a step-by-step written plan to audit and optimize your LinkedIn profile presence.</p>
-                </div>
+                <h3>The Career Starter Bundle</h3>
+                <div class="price">$85</div>
+                <p>Our ultimate suite: The total resume makeover, cover letter design, plus a step-by-step written plan to audit and optimize your LinkedIn profile presence.</p>
             </div>
         </div>
 
@@ -163,3 +158,5 @@
                 "Requested Service: " + service + "\n\n" +
                 "--- CAREER TARGETS ---\n" +
                 goals + "\n\n" +
+                "--- EXISTING BACKGROUND & NOTES ---\n" +
+                details + "\n\n" +
